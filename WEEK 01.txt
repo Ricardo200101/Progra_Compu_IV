@@ -1,0 +1,157 @@
+********************************
+CARACTERISTICAS DE JAVASCRIPT
+********************************
+
+- Interpretado 
+- Orientado a objetos
+- Debilmente tipado
+- Dinamico 
+
+Javascript es Backwards compatible
+
+var name="jose"
+
+var name="Andrea"
+
+name="Felipe"
+
+let name="Julio" 
+
+let name="Azul" 
+
+let color="Azul"
+
+
+let color="Negro"
+
+color="Amarillo"
+
+color
+
+console.(cleard)
+
+node
+
+
+*********************************
+> var name="jose"
+undefined
+> var name="jose"
+undefined
+>
+> var name="Andrea"
+undefined
+>
+> name="Felipe"
+'Felipe'
+>
+> let name="Julio"
+Uncaught SyntaxError: Identifier 'name' has already been declared
+>
+> let name="Azul"
+Uncaught SyntaxError: Identifier 'name' has already been declared
+>
+> let color="Azul"
+undefined
+>
+>
+> let color="Negro"
+Uncaught SyntaxError: Identifier 'color' has already been declared
+>
+> color
+'Amarillo'
+> const name
+... ="Jose"
+Uncaught SyntaxError: Identifier 'name' has already been declared
+> Const NAMES="Pablo"
+Const NAMES="Pablo"
+      ^^^^^
+
+Uncaught SyntaxError: Unexpected identifier
+> cost NAMES="Jose"
+cost NAMES="Jose"
+     ^^^^^
+
+Uncaught SyntaxError: Unexpected identifier
+> for(var i=0; i<5; i++){
+... console.log(i)}
+0
+1
+2
+3
+4
+undefined
+> i
+5
+> for(let j=0; j<5; j++){console.long(j)}
+Uncaught TypeError: console.long is not a function
+> j
+Uncaught ReferenceError: j is not defined
+> for(let j=0; j<5; j++){console.log(j)}
+0
+1
+2
+3
+4
+undefined
+> j
+Uncaught ReferenceError: j is not defined
+> var a=5
+undefined
+> typeof(a)
+'number'
+> var a=String(a)
+undefined
+> typeof(a)
+'string'
+> var colors = ['negro', 'amarillo', 'rojo']
+undefined
+> function getColorsD(valor){
+... console.log(`El color es ${valor}`)
+... }
+undefined
+> for(var i=0; < colors.length; i++){
+for(var i=0; < colors.length; i++){
+             ^
+
+Uncaught SyntaxError: Unexpected token '<'
+> for(var i=0; i< colors.length; i++){
+... getColorsD(colors[i])
+... }
+El color es negro
+El color es amarillo
+El color es rojo
+undefined
+> const getColorsE
+... = function(valor){
+... console.log(valor)]
+console.log(valor)]
+                  ^
+
+Uncaught SyntaxError: Unexpected token ']'
+> console.log(valor)}
+console.log(valor)}
+                  ^
+
+Uncaught SyntaxError: Unexpected token '}'
+> const getColorsE = function(valor){
+... console.log(valor)}
+undefined
+> for(var c of colors){getColorsE(c)}
+negro
+amarillo
+rojo
+undefined
+> const getColorsA = colorA => {console.log(colorA)}
+undefined
+> for(var element  of colors){getColorsE(element)}
+negro
+amarillo
+rojo
+undefined
+>
+
+
+
+
+
